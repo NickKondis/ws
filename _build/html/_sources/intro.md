@@ -1,4 +1,11 @@
-# Welcome to your Jupyter Book
+# Understanding Binomial Distribution versus Hypergeometric Distribution
+
+Statistics, and statistical modeling, provide a broad variety of mathematical tools for both understanding our world and, more importantly, creating predictive models. There can be some difficulty, however, in understanding which predictive model to choose.  One specific scenario is deciding whether to use **Binomial Dietribution** versus **Hypergeometric** distribution.
+
+
+
+
+
 
 This is a small sample book to give you a feel for how book content is
 structured.

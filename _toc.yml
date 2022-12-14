@@ -4,8 +4,8 @@
 format: jb-book
 root: intro
 chapters:
-- file: page_1
-- file: page_2
+- file: Binomial Distribution
+- file: Hypergeometric Distribution
 - file: page_3
 - file: page_4
 - file: markdown-notebooks
