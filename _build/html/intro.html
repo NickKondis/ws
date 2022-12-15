@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Understanding Binomial Distribution versus Hypergeometric Distribution &#8212; My sample book</title>
+    <title>Understanding Negative Binomial Distribution versus Geometric Distribution &#8212; My sample book</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Page 1" href="page_1.html" />
+    <link rel="next" title="Negative Binomial Distributions" href="Negative%20Binomial%20Distribution.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -108,19 +108,19 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    Understanding Binomial Distribution versus Hypergeometric Distribution
+                    Understanding Negative Binomial Distribution versus Geometric Distribution
                 </a>
             </li>
         </ul>
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="page_1.html">
-   Page 1
+  <a class="reference internal" href="Negative%20Binomial%20Distribution.html">
+   Negative Binomial Distributions
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="page_2.html">
-   Page 2
+  <a class="reference internal" href="Geometric%20Distribution.html">
+   Geometric Distribution
   </a>
  </li>
  <li class="toctree-l1">
@@ -303,23 +303,84 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Understanding Negative Binomial Distribution versus Geometric Distribution
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#negative-binomial-distribution-versus-geometric-distribution">
+   Negative Binomial Distribution versus Geometric Distribution
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-are-the-similar">
+     How Are The Similar
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Understanding Binomial Distribution versus Hypergeometric Distribution</h1>
+                <h1>Understanding Negative Binomial Distribution versus Geometric Distribution</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Understanding Negative Binomial Distribution versus Geometric Distribution
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#negative-binomial-distribution-versus-geometric-distribution">
+   Negative Binomial Distribution versus Geometric Distribution
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-are-the-similar">
+     How Are The Similar
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -327,18 +388,44 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="understanding-binomial-distribution-versus-hypergeometric-distribution">
-<h1>Understanding Binomial Distribution versus Hypergeometric Distribution<a class="headerlink" href="#understanding-binomial-distribution-versus-hypergeometric-distribution" title="Permalink to this headline">#</a></h1>
-<p>Statistics, and statistical modeling, provide a broad variety of mathematical tools for both understanding our world and, more importantly, creating predictive models. There can be some difficulty, however, in understanding which predictive model to choose.  One specific scenario is deciding whether to use <strong>Binomial Dietribution</strong> versus <strong>Hypergeometric</strong> distribution.</p>
-<p>This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a> for more information.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="understanding-negative-binomial-distribution-versus-geometric-distribution">
+<h1>Understanding Negative Binomial Distribution versus Geometric Distribution<a class="headerlink" href="#understanding-negative-binomial-distribution-versus-geometric-distribution" title="Permalink to this headline">#</a></h1>
+<p>Statistics, and statistical modeling, provide a broad variety of mathematical tools for both understanding our world and, more importantly, creating predictive models. There can be some difficulty, however, in understanding which predictive model to choose.  One specific scenario is deciding whether to use <strong>Negative Binomial Distribution</strong> versus <strong>Geometric distribution</strong>.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title">Did you know?</p>
+<p>Mastery of Statistics is
+Mastery Of The World!</p>
+</aside>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="negative-binomial-distribution-versus-geometric-distribution">
+<h1>Negative Binomial Distribution versus Geometric Distribution<a class="headerlink" href="#negative-binomial-distribution-versus-geometric-distribution" title="Permalink to this headline">#</a></h1>
+<section id="how-are-the-similar">
+<h2>How Are The Similar<a class="headerlink" href="#how-are-the-similar" title="Permalink to this headline">#</a></h2>
+<p>Negative Binomial distributions and Geometric distributions are similar in structure: each describe a series of independent trials with exactly two possible outcomes.  These outcomes are typically described in terms of success/failure.  For example, geneticist often describe simple heredity (binary) as a phenotype that either is expressed or not expressed.  Other examples include models describing pass or fail (as in I’m either going to pass my Tools of the Data Scientist course or fail..haha.)</p>
+<p>Try this for yourself…</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Who will win the Superbowl?</p>
+<p>No, this can have multiple outcomes (nonbinary results).</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Will win the Seattle Seahawks win the Superbowl?</p>
+<p>Yes, this has exactly two possible outcomes (binary results).</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Choose a digit (between 0 and 9)?</p>
+<p>No, this can have multiple outcomes (nonbinary (10 possible) results).</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Is a randomly chosen digit greater than 3?</p>
+<p>Yes, this has exactly two possible outcomes (binary results).</p>
+</div>
+<p>Now that we understand the binary nature, we can examine how these are used in Negative Binomial distributions and Geometric distributions.</p>
+<p><a class="reference external" href="https://https://stats.libretexts.org/Courses/Saint_Mary%27s_College_Notre_Dame/MATH_345__-_Probability_(Kuter)/3%3A_Discrete_Random_Variables/3.4%3A_Hypergeometric_Geometric_and_Negative_Binomial_Distributions">More Infot</a></p>
 <p>Check out the content pages bundled with this sample book to see more.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="page_1.html">Page 1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_2.html">Page 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Negative%20Binomial%20Distribution.html">Negative Binomial Distributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Geometric%20Distribution.html">Geometric Distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="page_3.html">Page 3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="page_4.html">Page 4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
@@ -346,6 +433,7 @@ It does not go in-depth into any particular topic - check out <a class="referenc
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 </ul>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -375,10 +463,10 @@ It does not go in-depth into any particular topic - check out <a class="referenc
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="page_1.html" title="next page">
+    <a class='right-next' id="next-link" href="Negative%20Binomial%20Distribution.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Page 1</p>
+        <p class="prev-next-title">Negative Binomial Distributions</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

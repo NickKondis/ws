@@ -1,1 +1,0 @@
-# Hypergeometric Distribution
