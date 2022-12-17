@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="5. Understanding the Differences" href="Diff_NB_G.html" />
-    <link rel="prev" title="3. Geometric Distribution" href="Geometric%20Distribution.html" />
+    <link rel="prev" title="Geometric Distribution" href="Geometric%20Distribution.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -138,7 +138,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Geometric%20Distribution.html">
-   3. Geometric Distribution
+   Geometric Distribution
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -217,7 +217,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/more_GD.ipynb"
+        <a href="https://mybinder.org/v2/gh/NickKondis/ws/master?urlpath=tree/docs/more_GD.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -260,7 +260,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book"
+        <a href="https://github.com/NickKondis/ws"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -277,7 +277,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmore_GD.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/NickKondis/ws/issues/new?title=Issue%20on%20page%20%2Fmore_GD.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -368,6 +368,13 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#let-s-take-a-deeper-dive-into-geometric-distribution">
    Let’s Take A Deeper Dive Into Geometric Distribution
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualizing-the-geometric-distribution">
+     Visualizing the Geometric Distribution
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -392,6 +399,13 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#let-s-take-a-deeper-dive-into-geometric-distribution">
    Let’s Take A Deeper Dive Into Geometric Distribution
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualizing-the-geometric-distribution">
+     Visualizing the Geometric Distribution
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -407,9 +421,10 @@ title="Print to PDF"
 <h1>More On Geometric Distribution<a class="headerlink" href="#more-on-geometric-distribution" title="Permalink to this headline">#</a></h1>
 <section id="let-s-take-a-deeper-dive-into-geometric-distribution">
 <h2>Let’s Take A Deeper Dive Into Geometric Distribution<a class="headerlink" href="#let-s-take-a-deeper-dive-into-geometric-distribution" title="Permalink to this headline">#</a></h2>
-<p>To better understand what <a class="reference internal" href="Negative%20Binomial%20Distribution.html#section-label"><span class="std std-ref">Negative Binomial</span></a> looks like, let’s visualize what the distribution actually looks like. Here is an example:</p>
+<p>To better understand what <a class="reference internal" href="Geometric%20Distribution.html#section-label2"><span class="std std-ref">Geometric Distribution</span></a> looks like, let’s visualize what the distribution actually looks like. Here is an example:</p>
 <p>In a certain coin game, a fair coin is flipped so that there is a 50% chance of getting heads and a 50% chance of getting tails.  In order to win this game, you must get a ‘heads’.  Let’s visualize what this probability distribution would be of winning this game for a given number of tosses.  The number of unsuccessful throws can be modeled using a <a class="reference internal" href="Geometric%20Distribution.html#section-label2"><span class="std std-ref">Geometric Distribution</span></a> distribution.</p>
-<div class="cell docutils container">
+<p>We are importing the necessary files below.</p>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Importing the necessary libraries</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -418,6 +433,8 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+<section id="visualizing-the-geometric-distribution">
+<h3>Visualizing the Geometric Distribution<a class="headerlink" href="#visualizing-the-geometric-distribution" title="Permalink to this headline">#</a></h3>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sample</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">geometric</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
@@ -432,11 +449,11 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/more_GD_4_0.png" src="_images/more_GD_4_0.png" />
+<img alt="_images/more_GD_6_0.png" src="_images/more_GD_6_0.png" />
 </div>
 </div>
 <p>Let’s try another one…</p>
-<p>In another game, cards are chosen at random (with replacement) from a full deck of 52 cards. The object of the game is to get a “clubs” suited card.  Let’s visualize what this probability distribution would be of winning this game for a given number of drawn cards. The number of the winning draw can be modeled with <a class="reference internal" href="Negative%20Binomial%20Distribution.html#section-label"><span class="std std-ref">Negative Binomial</span></a>.  As a reminder, the probability of drawing a clubs-suited card is 0.25 (13/52).</p>
+<p>In another game, cards are chosen at random (with replacement) from a full deck of 52 cards. The object of the game is to get a “clubs” suited card.  Let’s visualize what this probability distribution would be of winning this game for a given number of drawn cards. The number of the winning draw can be modeled with <a class="reference internal" href="Geometric%20Distribution.html#section-label2"><span class="std std-ref">Geometric Distribution</span></a>.  As a reminder, the probability of drawing a clubs-suited card is 0.25 (13/52).</p>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sample2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">geometric</span><span class="p">(</span><span class="mf">0.25</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
@@ -451,10 +468,11 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/more_GD_7_0.png" src="_images/more_GD_7_0.png" />
+<img alt="_images/more_GD_9_0.png" src="_images/more_GD_9_0.png" />
 </div>
 </div>
 <p><a class="reference internal" href="Geometric%20Distribution.html#section-label2"><span class="std std-ref">Geometric Distribution</span></a></p>
+</section>
 </section>
 </section>
 
@@ -489,7 +507,7 @@ title="Print to PDF"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">3. </span>Geometric Distribution</p>
+            <p class="prev-next-title">Geometric Distribution</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="Diff_NB_G.html" title="next page">

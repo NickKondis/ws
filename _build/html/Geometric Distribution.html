@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>3. Geometric Distribution &#8212; Negative Binomial v. Geometric Distributions</title>
+    <title>Geometric Distribution &#8212; Negative Binomial v. Geometric Distributions</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,8 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="4. More Geometric Distribution" href="more_GD.html" />
-    <link rel="prev" title="2. More On Negative Binomial" href="more_NB.html" />
+    <link rel="next" title="More On Geometric Distribution" href="more_GD.html" />
+    <link rel="prev" title="More On Negative Binomial" href="more_NB.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -123,12 +123,12 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Negative%20Binomial%20Distribution.html">
-   1. Negative Binomial Distributions
+   Negative Binomial Distributions
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="more_NB.html">
-   2. More On Negative Binomial
+   More On Negative Binomial
   </a>
  </li>
 </ul>
@@ -140,12 +140,12 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   3. Geometric Distribution
+   Geometric Distribution
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="more_GD.html">
-   4. More Geometric Distribution
+   More On Geometric Distribution
   </a>
  </li>
 </ul>
@@ -157,7 +157,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Diff_NB_G.html">
-   6. Understanding the Differences
+   Understanding the Differences
   </a>
  </li>
 </ul>
@@ -233,7 +233,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book"
+        <a href="https://github.com/NickKondis/ws"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -250,7 +250,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FGeometric Distribution.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/NickKondis/ws/issues/new?title=Issue%20on%20page%20%2FGeometric Distribution.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -339,22 +339,22 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#what-is-a-geometric-distribution">
-   3.1. What is a Geometric distribution?
+   What is a Geometric distribution?
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#properties-of-geometric-distributions">
-   3.2. Properties of Geometric Distributions
+   Properties of Geometric Distributions
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#section-label">
-   3.3. Geometric distribution
+   Geometric distribution
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#section-label2">
-   3.4. Geometric Distribution
+   Geometric Distribution
   </a>
  </li>
 </ul>
@@ -378,22 +378,22 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#what-is-a-geometric-distribution">
-   3.1. What is a Geometric distribution?
+   What is a Geometric distribution?
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#properties-of-geometric-distributions">
-   3.2. Properties of Geometric Distributions
+   Properties of Geometric Distributions
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#section-label">
-   3.3. Geometric distribution
+   Geometric distribution
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#section-label2">
-   3.4. Geometric Distribution
+   Geometric Distribution
   </a>
  </li>
 </ul>
@@ -407,13 +407,13 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="geometric-distribution">
-<h1><span class="section-number">3. </span>Geometric Distribution<a class="headerlink" href="#geometric-distribution" title="Permalink to this headline">#</a></h1>
+<h1>Geometric Distribution<a class="headerlink" href="#geometric-distribution" title="Permalink to this headline">#</a></h1>
 <section id="what-is-a-geometric-distribution">
-<h2><span class="section-number">3.1. </span>What is a Geometric distribution?<a class="headerlink" href="#what-is-a-geometric-distribution" title="Permalink to this headline">#</a></h2>
+<h2>What is a Geometric distribution?<a class="headerlink" href="#what-is-a-geometric-distribution" title="Permalink to this headline">#</a></h2>
 <p>Geometric distribution is the probability of your first success after X number of trials.  For instance, the probability of getting the first ‘heads’ after a given number of coin flips.</p>
 </section>
 <section id="properties-of-geometric-distributions">
-<h2><span class="section-number">3.2. </span>Properties of Geometric Distributions<a class="headerlink" href="#properties-of-geometric-distributions" title="Permalink to this headline">#</a></h2>
+<h2>Properties of Geometric Distributions<a class="headerlink" href="#properties-of-geometric-distributions" title="Permalink to this headline">#</a></h2>
 <ol class="simple">
 <li><p>Each trial is independent (meaning the outcome of each trial has not effect on the probability of every other trial.</p></li>
 <li><p>The results of each trial have exactly two possible outcomes, typically referred to as <em>success</em> and <em>failure</em>.</p></li>
@@ -422,7 +422,7 @@ title="Print to PDF"
 <p>The equation for Geometric distribution is given by:</p>
 </section>
 <section id="section-label">
-<span id="id1"></span><h2><span class="section-number">3.3. </span>Geometric distribution<a class="headerlink" href="#section-label" title="Permalink to this headline">#</a></h2>
+<span id="id1"></span><h2>Geometric distribution<a class="headerlink" href="#section-label" title="Permalink to this headline">#</a></h2>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{align} 
 p(x) = P(X=x) &amp;= P(\text first success occurring by the x^{th}\ \text{trial}) \notag \\ 
@@ -433,23 +433,33 @@ p(x) = P(X=x) &amp;= P(\text first success occurring by the x^{th}\ \text{trial}
 <p>It is important to note that the term ‘geometric’ implies an important mathematical property, that the infinite sum of geometric values is given the equation:</p>
 </section>
 <section id="section-label2">
-<span id="id2"></span><h2><span class="section-number">3.4. </span>Geometric Distribution<a class="headerlink" href="#section-label2" title="Permalink to this headline">#</a></h2>
+<span id="id2"></span><h2>Geometric Distribution<a class="headerlink" href="#section-label2" title="Permalink to this headline">#</a></h2>
 <div class="math notranslate nohighlight">
 \[
 \sum\limits_{k=0}^\infty ar^k=a+ar+ar^2+ar^3+\cdots=\dfrac{a}{1-r}=a(1-r)^{-1}
 \]</div>
-<p>where <em>r</em> is the common ratio, the value a term is multiplied by to get to the next term.  Por Geometric distributions, the value of <em>r</em> is the same as the probability (<em>p</em>).  The common ratio must be between 1 and -1 (|<em>r</em>| &lt; 1).</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
+<p>where <em>r</em> is the common ratio, the value a term is multiplied by to get to the next term.  For (section-label2, the value of <em>r</em> is the same as the probability (<em>p</em>).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The common ratio must be between 1 and -1 (|<em>r</em>| &lt; 1).</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>Since values of probability (<em>p</em>) are necessarily between 0 and 1, the property |<em>r</em>| &lt; 1 is necessarily met.</p>
 </div>
 <p>Let’s look at a couple of examples examples…</p>
+<figure class="align-default" id="cards1">
+<a class="reference internal image-reference" href="_images/Heart-Playing-Card-PNG.png"><img alt="_images/Heart-Playing-Card-PNG.png" src="_images/Heart-Playing-Card-PNG.png" style="height: 200px;" /></a>
+</figure>
 <blockquote>
 <div><p>Choose a random card from a full deck of 52 cards, replacing a shuffling the card after each turn.  What is the probability that you will draw a “clubs” after 7 trials?</p>
 </div></blockquote>
 <p>The probability <em>p</em> of each success is 0.25 (13/52) and <em>x</em> is the number of terms (in this case seven).</p>
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="_images/dice_PNG3.png"><img alt="_images/dice_PNG3.png" src="_images/dice_PNG3.png" style="height: 200px;" /></a>
+</figure>
 <blockquote>
-<div><p>Throw a fair sided die 8 times.  What is the probability that you will have thrown an even value (on the die)?</p>
+<div><p>Throw a fair sided die 8 times.  What is the probability that you will have thrown one even value (on the die)?</p>
 </div></blockquote>
 <p>The probability <em>p</em> of each success is 0.5, <em>x</em> is the total number of throws (8).</p>
 </section>
@@ -486,13 +496,13 @@ p(x) = P(X=x) &amp;= P(\text first success occurring by the x^{th}\ \text{trial}
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">2. </span>More On Negative Binomial</p>
+            <p class="prev-next-title">More On Negative Binomial</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="more_GD.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">4. </span>More Geometric Distribution</p>
+        <p class="prev-next-title">More On Geometric Distribution</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

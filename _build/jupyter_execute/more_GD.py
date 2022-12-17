@@ -4,9 +4,11 @@
 # # More On Geometric Distribution
 # ## Let's Take A Deeper Dive Into Geometric Distribution
 
-# To better understand what [](section-label) looks like, let's visualize what the distribution actually looks like. Here is an example:
+# To better understand what [](section-label2) looks like, let's visualize what the distribution actually looks like. Here is an example:
 
 # In a certain coin game, a fair coin is flipped so that there is a 50% chance of getting heads and a 50% chance of getting tails.  In order to win this game, you must get a 'heads'.  Let's visualize what this probability distribution would be of winning this game for a given number of tosses.  The number of unsuccessful throws can be modeled using a [](section-label2) distribution.
+
+# We are importing the necessary files below. 
 
 # In[1]:
 
@@ -15,6 +17,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
+# ### Visualizing the Geometric Distribution
 
 # In[2]:
 
@@ -33,7 +37,7 @@ plt.show()
 
 # Let's try another one...
 
-# In another game, cards are chosen at random (with replacement) from a full deck of 52 cards. The object of the game is to get a "clubs" suited card.  Let's visualize what this probability distribution would be of winning this game for a given number of drawn cards. The number of the winning draw can be modeled with [](section-label).  As a reminder, the probability of drawing a clubs-suited card is 0.25 (13/52).
+# In another game, cards are chosen at random (with replacement) from a full deck of 52 cards. The object of the game is to get a "clubs" suited card.  Let's visualize what this probability distribution would be of winning this game for a given number of drawn cards. The number of the winning draw can be modeled with [](section-label2).  As a reminder, the probability of drawing a clubs-suited card is 0.25 (13/52).
 
 # In[3]:
 

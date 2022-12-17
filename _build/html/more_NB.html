@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="3. Geometric Distribution" href="Geometric%20Distribution.html" />
+    <link rel="next" title="Geometric Distribution" href="Geometric%20Distribution.html" />
     <link rel="prev" title="Negative Binomial Distributions" href="Negative%20Binomial%20Distribution.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -138,7 +138,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Geometric%20Distribution.html">
-   3. Geometric Distribution
+   Geometric Distribution
   </a>
  </li>
  <li class="toctree-l1">
@@ -217,7 +217,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/more_NB.ipynb"
+        <a href="https://mybinder.org/v2/gh/NickKondis/ws/master?urlpath=tree/docs/more_NB.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -260,7 +260,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book"
+        <a href="https://github.com/NickKondis/ws"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -277,7 +277,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmore_NB.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/NickKondis/ws/issues/new?title=Issue%20on%20page%20%2Fmore_NB.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -368,6 +368,13 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#let-s-take-a-deeper-dive-into-negative-binomial">
    Let’s Take A Deeper Dive Into Negative Binomial
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualizing-the-negative-binomial-distribution">
+     Visualizing the Negative Binomial Distribution
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -392,6 +399,13 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#let-s-take-a-deeper-dive-into-negative-binomial">
    Let’s Take A Deeper Dive Into Negative Binomial
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualizing-the-negative-binomial-distribution">
+     Visualizing the Negative Binomial Distribution
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -407,8 +421,10 @@ title="Print to PDF"
 <h1>More On Negative Binomial<a class="headerlink" href="#more-on-negative-binomial" title="Permalink to this headline">#</a></h1>
 <section id="let-s-take-a-deeper-dive-into-negative-binomial">
 <h2>Let’s Take A Deeper Dive Into Negative Binomial<a class="headerlink" href="#let-s-take-a-deeper-dive-into-negative-binomial" title="Permalink to this headline">#</a></h2>
-<p>To better understand what Negative Binomial distribution looks like, let’s visualize what the distribution actually looks like:</p>
-<div class="cell docutils container">
+<p>To better understand what <a class="reference internal" href="Geometric%20Distribution.html#section-label"><span class="std std-ref">Geometric distribution</span></a> distribution looks like, let’s visualize what the distribution actually looks like:</p>
+<p>The <a class="reference internal" href="Geometric%20Distribution.html#section-label"><span class="std std-ref">Geometric distribution</span></a> formula can be found here.</p>
+<p>We are importing the necessary files below.</p>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Importing the necessary libraries</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -418,7 +434,9 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p>In a certain coin game, a fair coin is flipped so that there is a 50% chance of getting heads and a 50% chance of getting tails.  In order to win this game, you must get a total of three heads.  Let’s visualize what this probability distribution would be of winning this game for a given number of tosses.  The number of unsuccessful throws can be modeled using a <a class="reference internal" href="Negative%20Binomial%20Distribution.html#section-label"><span class="std std-ref">Negative Binomial</span></a> distribution.</p>
+<section id="visualizing-the-negative-binomial-distribution">
+<h3>Visualizing the Negative Binomial Distribution<a class="headerlink" href="#visualizing-the-negative-binomial-distribution" title="Permalink to this headline">#</a></h3>
+<p>In a certain coin game, a fair coin is flipped so that there is a 50% chance of getting heads and a 50% chance of getting tails.  In order to win this game, you must get a total of three heads.  Let’s visualize what this probability distribution would be of winning this game for a given number of tosses.  The number of unsuccessful throws can be modeled using a <a class="reference internal" href="Geometric%20Distribution.html#section-label"><span class="std std-ref">Geometric distribution</span></a> distribution.</p>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># X = Number of throws</span>
@@ -444,16 +462,16 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.LineCollection at 0x28c46254c10&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.LineCollection at 0x1f6ff8c4c10&gt;
 </pre></div>
 </div>
-<img alt="_images/more_NB_4_1.png" src="_images/more_NB_4_1.png" />
+<img alt="_images/more_NB_7_1.png" src="_images/more_NB_7_1.png" />
 </div>
 </div>
-<p>From the graph above, we can see that the probability that a person wins the game on the eighth toss is  approximately 0.023 (from the chart of <a class="reference internal" href="Negative%20Binomial%20Distribution.html#section-label"><span class="std std-ref">Negative Binomial</span></a> above).</p>
+<p>From the graph above, we can see that the probability that a person wins the game on the eighth toss is  approximately 0.023 (from the chart of <a class="reference internal" href="Geometric%20Distribution.html#section-label"><span class="std std-ref">Geometric distribution</span></a> above).</p>
 <p>Here’s another one:</p>
 <p>Using a pair of dice, a person rolls both dice simultaneously.  Mismatched dice score a value of 0 while matched (paired) dice score a value of 2.  The object of the game is to achieve a score of 8.</p>
-<p>In this game, a win requires a score of 8 which equates to 4 pairs.  the probability of rolling a pair of matched dice is 1/6 (6/36).  This can be modeled with a <a class="reference internal" href="Negative%20Binomial%20Distribution.html#section-label"><span class="std std-ref">Negative Binomial</span></a>.</p>
+<p>In this game, a win requires a score of 8 which equates to 4 pairs.  the probability of rolling a pair of matched dice is 1/6 (6/36).  This can be modeled with a <a class="reference internal" href="Geometric%20Distribution.html#section-label"><span class="std std-ref">Geometric distribution</span></a>.</p>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># X = Number of throws</span>
@@ -479,12 +497,13 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.LineCollection at 0x28c472c5f70&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.LineCollection at 0x1f680013f40&gt;
 </pre></div>
 </div>
-<img alt="_images/more_NB_9_1.png" src="_images/more_NB_9_1.png" />
+<img alt="_images/more_NB_12_1.png" src="_images/more_NB_12_1.png" />
 </div>
 </div>
+</section>
 </section>
 </section>
 
@@ -525,7 +544,7 @@ title="Print to PDF"
     <a class='right-next' id="next-link" href="Geometric%20Distribution.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">3. </span>Geometric Distribution</p>
+        <p class="prev-next-title">Geometric Distribution</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

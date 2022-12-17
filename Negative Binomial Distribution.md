@@ -35,8 +35,11 @@ $$
 P(~A) = 1 − P(A)
 
 
-
 $$ 
+
+```{margin} The Complement Rule
+The complement rule can be very useful in solving probability questions.
+```
 
 This rule means that the the sum of the probability of a binary event occurring and not the event not occurring equals 1.  For instance, if the probability of winning a particular game is 0.6, then the probability of losing is 0.4 (0.6 + 0.4 = 1).
 
@@ -44,14 +47,24 @@ Let's look at a couple of examples examples...
 
 
 
+```{figure} Fanned-Playing-Card-Transparent.png
+---
+height: 200px
+name: cards1
+---
+```
 
-![](https://github.com/NickKondis/ws/tree/coding/images/Fanned-Playing-Card-Transparent.png)
-
+                                                                     
 >Choose a random card from a full deck of 52 cards, replacing a shuffling the card after each turn.  What is the probability that you will have chosen exactly three spades by the tenth draw?
 
 The probability *p* of each success is 0.25 (13/52), *x* is the number of terms (in this case ten), and *r* is the number of necessary individual successes (in this case 3).
 
-![](https://github.com/NickKondis/ws/tree/coding/images/pngwing.com.png)
+```{figure} pngwing.com.png
+---
+height: 200px
+name: cards1
+---
+```
 
 >Throw a fair sided die 5 times.  What is the probability that you will have thrown at least four even numbers by the fifth role?
 

@@ -36,25 +36,40 @@ $$
 $$
 
 
-where *r* is the common ratio, the value a term is multiplied by to get to the next term.  Por Geometric distributions, the value of *r* is the same as the probability (*p*).  The common ratio must be between 1 and -1 (|*r*| < 1).  
+where *r* is the common ratio, the value a term is multiplied by to get to the next term.  For (section-label2, the value of *r* is the same as the probability (*p*).  
 
-```{tip}
+
+
+```{note}
+  The common ratio must be between 1 and -1 (|*r*| < 1).
+```
+```{note}
 Since values of probability (*p*) are necessarily between 0 and 1, the property |*r*| < 1 is necessarily met.
 ```
 
 
 
-
-
 Let's look at a couple of examples examples...
+
+```{figure} Heart-Playing-Card-PNG.png
+---
+height: 200px
+name: cards1
+---
+```
 
 >Choose a random card from a full deck of 52 cards, replacing a shuffling the card after each turn.  What is the probability that you will draw a "clubs" after 7 trials?
 
 The probability *p* of each success is 0.25 (13/52) and *x* is the number of terms (in this case seven).
 
+```{figure} dice_PNG3.png
+---
+height: 200px
+name: cards1
+---
+```
 
-
->Throw a fair sided die 8 times.  What is the probability that you will have thrown an even value (on the die)?
+>Throw a fair sided die 8 times.  What is the probability that you will have thrown one even value (on the die)?
 
 The probability *p* of each success is 0.5, *x* is the total number of throws (8).
 

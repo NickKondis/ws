@@ -4,7 +4,11 @@
 # # More On Negative Binomial
 # ## Let's Take A Deeper Dive Into Negative Binomial
 
-# To better understand what Negative Binomial distribution looks like, let's visualize what the distribution actually looks like:
+# To better understand what [](section-label) distribution looks like, let's visualize what the distribution actually looks like:
+
+# The [](section-label) formula can be found here.
+
+# We are importing the necessary files below. 
 
 # In[1]:
 
@@ -14,6 +18,8 @@ import numpy as np
 from scipy.stats import nbinom
 import matplotlib.pyplot as plt
 
+
+# ### Visualizing the Negative Binomial Distribution
 
 # In a certain coin game, a fair coin is flipped so that there is a 50% chance of getting heads and a 50% chance of getting tails.  In order to win this game, you must get a total of three heads.  Let's visualize what this probability distribution would be of winning this game for a given number of tosses.  The number of unsuccessful throws can be modeled using a [](section-label) distribution.
 # 
