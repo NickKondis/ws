@@ -27,7 +27,25 @@ Negative Binomial distributions must be independent, that is each success must h
 *r* must be greater than or equal to 2!
 ```
 
+As a reminder, this, as well as other probabilities, are often used in conjunction with the the complement rule shown below:
+
+
+$$
+
+P(~A) = 1 − P(A)
+
+
+
+$$ 
+
+This rule means that the the sum of the probability of a binary event occurring and not the event not occurring equals 1.  For instance, if the probability of winning a particular game is 0.6, then the probability of losing is 0.4 (0.6 + 0.4 = 1).
+
 Let's look at a couple of examples examples...
+
+
+
+
+![UBC Master of data science logo](https://ubc-mds.github.io/img/mdslogopad.png)
 
 >Choose a random card from a full deck of 52 cards, replacing a shuffling the card after each turn.  What is the probability that you will have chosen exactly three spades by the tenth draw?
 

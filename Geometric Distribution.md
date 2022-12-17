@@ -13,7 +13,7 @@ Geometric distribution is the probability of your first success after X number o
 
 The equation for Geometric distribution is given by:
 
-(section-label2)=
+(section-label)=
 ## Geometric distribution
 $$
 
