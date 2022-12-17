@@ -2,8 +2,19 @@
 
 ## What is a Geometric distribution?
 
-Geometric distribution is the probability of your first success after X number of trials.  The equation for Geometric distribution is given by:
+Geometric distribution is the probability of your first success after X number of trials.  For instance, the probability of getting the first 'heads' after a given number of coin flips.
 
+## Properties of Geometric Distributions
+
+1. Each trial is independent (meaning the outcome of each trial has not effect on the probability of every other trial.
+2. The results of each trial have exactly two possible outcomes, typically referred to as *success* and *failure*.
+3. Each trial has the same probability (*p*) of success.
+
+
+The equation for Geometric distribution is given by:
+
+(section-label)=
+## Geometric distribution
 $$
 
 \begin{align} 
@@ -14,10 +25,36 @@ p(x) = P(X=x) &= P(\text first success occurring by the x^{th}\ \text{trial}) \n
 
 $$
 
+Where *p* is the probability of success of each trial, *x* is the number of attempts until the first success.
+
+It is important to note that the term 'geometric' implies an important mathematical property, that the infinite sum of geometric values is given the equation:
+
+(section-label2)=
+## Geometric Distribution
+$$
+\sum\limits_{k=0}^\infty ar^k=a+ar+ar^2+ar^3+\cdots=\dfrac{a}{1-r}=a(1-r)^{-1}
+$$
+
+
+where *r* is the common ratio, the value a term is multiplied by to get to the next term.  Por Geometric distributions, the value of *r* is the same as the probability (*p*).  The common ratio must be between 1 and -1 (|*r*| < 1).  
+
+```{tip}
+Since values of probability (*p*) are necessarily between 0 and 1, the property |*r*| < 1 is necessarily met.
+```
 
 
 
 
 
-Suppose that a sequence of independent Bernoulli trials is performed, with p=P("success") for each trial. Define the random variable X to give the number of trial at which the first success occurs. Then X has a geometric distribution with parameter p. The probability mass function of X is given by
-p(x)=P(X=x)=P(1st success on xth trial)=P(1st (x−1) trials are failures & xth trial is success)=(1−p)x−1p,for x=1,2,3,…(3.4.1)
+Let's look at a couple of examples examples...
+
+>Choose a random card from a full deck of 52 cards, replacing a shuffling the card after each turn.  What is the probability that you will draw a "clubs" after 7 trials?
+
+The probability *p* of each success is 0.25 (13/52) and *x* is the number of terms (in this case seven).
+
+
+
+>Throw a fair sided die 8 times.  What is the probability that you will have thrown an even value (on the die)?
+
+The probability *p* of each success is 0.5, *x* is the total number of throws (8).
+
