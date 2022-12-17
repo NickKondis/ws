@@ -45,13 +45,13 @@ Let's look at a couple of examples examples...
 
 
 
-![UBC Master of data science logo](https://ubc-mds.github.io/img/mdslogopad.png)
+![](https://github.com/NickKondis/ws/tree/coding/images/Fanned-Playing-Card-Transparent.png)
 
 >Choose a random card from a full deck of 52 cards, replacing a shuffling the card after each turn.  What is the probability that you will have chosen exactly three spades by the tenth draw?
 
 The probability *p* of each success is 0.25 (13/52), *x* is the number of terms (in this case ten), and *r* is the number of necessary individual successes (in this case 3).
 
-
+![](https://github.com/NickKondis/ws/tree/coding/images/pngwing.com.png)
 
 >Throw a fair sided die 5 times.  What is the probability that you will have thrown at least four even numbers by the fifth role?
 
