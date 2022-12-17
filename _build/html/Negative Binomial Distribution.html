@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Negative Binomial Distributions &#8212; My sample book</title>
+    <title>Negative Binomial Distributions &#8212; Negative Binomial v. Geometric Distributions</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Geometric Distribution" href="Geometric%20Distribution.html" />
+    <link rel="next" title="More On Negative Binomial" href="more_NB.html" />
     <link rel="prev" title="Understanding Negative Binomial Distribution versus Geometric Distribution" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -99,7 +99,7 @@ const thebe_selector_output = ".output, .cell_output"
       <img src="_static/logo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">My sample book</h1>
+      <h1 class="site-logo" id="site-title">Negative Binomial v. Geometric Distributions</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -122,8 +122,23 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="more_NB.html">
+   More On Negative Binomial
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="Geometric%20Distribution.html">
    Geometric Distribution
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="more_GD.html">
+   More Geometric Distribution
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ref_test.html">
+   Ref Test
   </a>
  </li>
  <li class="toctree-l1">
@@ -333,6 +348,11 @@ title="Print to PDF"
    What is a Negative Binomial distribution?
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#negative-binomial">
+   Negative Binomial
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -357,6 +377,11 @@ title="Print to PDF"
    What is a Negative Binomial distribution?
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#negative-binomial">
+   Negative Binomial
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -372,6 +397,9 @@ title="Print to PDF"
 <section id="what-is-a-negative-binomial-distribution">
 <h2>What is a Negative Binomial distribution?<a class="headerlink" href="#what-is-a-negative-binomial-distribution" title="Permalink to this headline">#</a></h2>
 <p>In a series of independent trials, where the probability of success is given by p, a Negative Binomial distribution describes the probability of success after X number of trials.  We can determine this probability by:</p>
+</section>
+<section id="negative-binomial">
+<span id="section-label"></span><h2>Negative Binomial<a class="headerlink" href="#negative-binomial" title="Permalink to this headline">#</a></h2>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{align*} 
 p(x) = P(X=x) &amp;= P(r^{th}\ \text{success is on}\ x^{th}\ \text{trial}) \\  
@@ -388,15 +416,15 @@ p(x) = P(X=x) &amp;= P(r^{th}\ \text{success is on}\ x^{th}\ \text{trial}) \\
 <p><em>r</em> must be greater than or equal to 2!</p>
 </div>
 <p>Let’s look at a couple of examples examples…</p>
-<ol class="simple">
-<li><p>Choose a random card from a full deck of 52 cards, replacing a shuffling the card after each turn.  What is the probability that you will have chosen exactly three spades by the tenth draw?</p></li>
-</ol>
+<blockquote>
+<div><p>Choose a random card from a full deck of 52 cards, replacing a shuffling the card after each turn.  What is the probability that you will have chosen exactly three spades by the tenth draw?</p>
+</div></blockquote>
 <p>The probability <em>p</em> of each success is 0.25 (13/52), <em>x</em> is the number of terms (in this case ten), and <em>r</em> is the number of necessary individual successes (in this case 3).</p>
-<ol class="simple">
-<li><p>Through a fair sided die 5 times.  What is the probability that you will have thrown at least four even numbers by the fifth role?</p></li>
-</ol>
+<blockquote>
+<div><p>Throw a fair sided die 5 times.  What is the probability that you will have thrown at least four even numbers by the fifth role?</p>
+</div></blockquote>
 <p>The probability <em>p</em> of each success is 0.5, <em>x</em> is the total number of throws (5), and <em>r</em> is the number of necessary individual successes (4).</p>
-<p>Note, the mathematics of solving the probabilities is beyond the scope of this page.  It is assumed that you will solve the math using technology (symbolab, R, statistics calculator, etc.)</p>
+<p>Note, the mathematics of solving the probabilities is beyond the scope of this page.  It is assumed that you will solve the math using technology (symbolab, R, statistics calculator, etc) to find the <a class="reference internal" href="#section-label"><span class="std std-ref">Negative Binomial</span></a>.</p>
 </section>
 </section>
 
@@ -434,10 +462,10 @@ p(x) = P(X=x) &amp;= P(r^{th}\ \text{success is on}\ x^{th}\ \text{trial}) \\
             <p class="prev-next-title">Understanding Negative Binomial Distribution versus Geometric Distribution</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="Geometric%20Distribution.html" title="next page">
+    <a class='right-next' id="next-link" href="more_NB.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Geometric Distribution</p>
+        <p class="prev-next-title">More On Negative Binomial</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
@@ -448,7 +476,7 @@ p(x) = P(X=x) &amp;= P(r^{th}\ \text{success is on}\ x^{th}\ \text{trial}) \\
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book Community<br/>
+    By Nicholas Kondis<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

@@ -10,7 +10,7 @@ Mastery Of The World!
 # Negative Binomial Distribution versus Geometric Distribution
 ## How Are The Similar
 
-Negative Binomial distributions and Geometric distributions are similar in structure: each describe a series of independent trials with exactly two possible outcomes.  These outcomes are typically described in terms of success/failure.  For example, geneticist often describe simple heredity (binary) as a phenotype that either is expressed or not expressed.  Other examples include models describing pass or fail (as in I'm either going to pass my Tools of the Data Scientist course or fail..haha.)
+[](section-label) distributions and Geometric distributions are similar in structure: each describe a series of independent trials with exactly two possible outcomes.  These outcomes are typically described in terms of success/failure.  For example, geneticist often describe simple heredity (binary) as a phenotype that either is expressed or not expressed.  Other examples include models describing pass or fail (as in I'm either going to pass my Tools of the Data Scientist course or fail..haha.)
 
 Try this for yourself...
 
@@ -41,16 +41,13 @@ Yes, this has exactly two possible outcomes (binary results).
 :::
 
 
-Now that we understand the binary nature, we can examine how these are used in Negative Binomial distributions and Geometric distributions.
+Now that we understand the binary nature, we can examine how these are used in [](section-label) distributions and Geometric distributions.
 
-
-
-
-
-[More Infot](https://https://stats.libretexts.org/Courses/Saint_Mary's_College_Notre_Dame/MATH_345__-_Probability_(Kuter)/3%3A_Discrete_Random_Variables/3.4%3A_Hypergeometric_Geometric_and_Negative_Binomial_Distributions)
 
 
 Check out the content pages bundled with this sample book to see more.
 
 ```{tableofcontents}
 ```
+
+[More Info](https://stats.libretexts.org/Courses/Saint_Mary's_College_Notre_Dame/MATH_345__-_Probability_(Kuter)/3%3A_Discrete_Random_Variables/3.4%3A_Hypergeometric_Geometric_and_Negative_Binomial_Distributions)

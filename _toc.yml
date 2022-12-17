@@ -5,9 +5,10 @@ format: jb-book
 root: intro
 chapters:
 - file: Negative Binomial Distribution
-= file: More On Negative Binomial
+- file: more_NB
 - file: Geometric Distribution
-- file: More Geometric Distribution
+- file: more_GD
+- file: ref_test
 - file: page_3
 - file: page_4
 - file: markdown-notebooks

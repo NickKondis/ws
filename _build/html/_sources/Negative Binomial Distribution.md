@@ -4,6 +4,10 @@
 
 In a series of independent trials, where the probability of success is given by p, a Negative Binomial distribution describes the probability of success after X number of trials.  We can determine this probability by:
 
+
+
+(section-label)=
+## Negative Binomial
 $$
 
 \begin{align*} 
@@ -25,19 +29,19 @@ Negative Binomial distributions must be independent, that is each success must h
 
 Let's look at a couple of examples examples...
 
-1. Choose a random card from a full deck of 52 cards, replacing a shuffling the card after each turn.  What is the probability that you will have chosen exactly three spades by the tenth draw?
+>Choose a random card from a full deck of 52 cards, replacing a shuffling the card after each turn.  What is the probability that you will have chosen exactly three spades by the tenth draw?
 
 The probability *p* of each success is 0.25 (13/52), *x* is the number of terms (in this case ten), and *r* is the number of necessary individual successes (in this case 3).
 
 
 
-2. Through a fair sided die 5 times.  What is the probability that you will have thrown at least four even numbers by the fifth role?
+>Throw a fair sided die 5 times.  What is the probability that you will have thrown at least four even numbers by the fifth role?
 
 The probability *p* of each success is 0.5, *x* is the total number of throws (5), and *r* is the number of necessary individual successes (4).
 
 
 
-Note, the mathematics of solving the probabilities is beyond the scope of this page.  It is assumed that you will solve the math using technology (symbolab, R, statistics calculator, etc.)
+Note, the mathematics of solving the probabilities is beyond the scope of this page.  It is assumed that you will solve the math using technology (symbolab, R, statistics calculator, etc) to find the [](section-label).
 
 
 
