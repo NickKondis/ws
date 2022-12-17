@@ -34,12 +34,12 @@ nbinom_pd = nbinom.pmf(X, r, p)
 
 # Show plot of negative binomial distribution
 
-fig, ax = plt.subplots(1, 1, figsize=(10, 8))
-ax.plot(X, nbinom_pd, 'bo', ms=8, label='nbinom pmf')
+fig, nbd = plt.subplots(1, 1, figsize=(10, 8))
+nbd.plot(X, nbinom_pd, 'bo', ms=8, label='nbinom pmf')
 plt.ylabel("Probability", fontsize="15")
 plt.xlabel("Number of Tosses", fontsize="15")
 plt.title("Negative Binomial Distribution - Flipping A Coin Game", fontsize="18")
-ax.vlines(X, 0, nbinom_pd, colors='b', lw=5, alpha=0.5)
+nbd.vlines(X, 0, nbinom_pd, colors='b', lw=5, alpha=0.5)
 
 
 # From the graph above, we can see that the probability that a person wins the game on the eighth toss is  approximately 0.023 (from the chart of [](section-label) above).

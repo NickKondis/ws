@@ -3,14 +3,19 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: Negative Binomial Distribution
-- file: more_NB
-- file: Geometric Distribution
-- file: more_GD
-- file: ref_test
-- file: page_3
-- file: page_4
-- file: markdown-notebooks
-- file: markdown
-- file: notebooks
+parts:
+- caption: Part 1
+  numbered: true
+  chapters:
+  - file: Negative Binomial Distribution
+  - file: more_NB
+- caption: Part 2
+  numbered: true
+  chapters:
+  - file: Geometric Distribution
+  - file: more_GD
+- caption: Part 3
+  numbered: true
+  chapters:
+  - file: Diff_NB_G
+

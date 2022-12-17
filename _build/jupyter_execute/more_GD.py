@@ -6,7 +6,7 @@
 # # More On Geometric Distribution
 # ## Let's Take A Deeper Dive Into Geometric Distribution
 
-# To better understand what Geometric Distribution looks like, let's visualize what the distribution actually looks like. Here is an example:
+# To better understand what Geometric Distribution looks like, let's visualize what the distribution actually looks like. Here is an example:[](section-label2)
 
 # In a certain coin game, a fair coin is flipped so that there is a 50% chance of getting heads and a 50% chance of getting tails.  In order to win this game, you must get a 'heads'.  Let's visualize what this probability distribution would be of winning this game for a given number of tosses.  The number of unsuccessful throws can be modeled using a [](section-label2) distribution.
 

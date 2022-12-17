@@ -29,6 +29,8 @@ Where *p* is the probability of success of each trial, *x* is the number of atte
 
 It is important to note that the term 'geometric' implies an important mathematical property, that the infinite sum of geometric values is given the equation:
 
+(section-label2)=
+## Geometric Distribution
 $$
 \sum\limits_{k=0}^\infty ar^k=a+ar+ar^2+ar^3+\cdots=\dfrac{a}{1-r}=a(1-r)^{-1}
 $$

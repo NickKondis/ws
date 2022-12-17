@@ -45,12 +45,9 @@ Now that we understand the binary nature, we can examine how these are used in [
 
 
 
-
-
-[More Info](https://stats.libretexts.org/Courses/Saint_Mary's_College_Notre_Dame/MATH_345__-_Probability_(Kuter)/3%3A_Discrete_Random_Variables/3.4%3A_Hypergeometric_Geometric_and_Negative_Binomial_Distributions)
-
-
 Check out the content pages bundled with this sample book to see more.
 
 ```{tableofcontents}
 ```
+
+[More Info](https://stats.libretexts.org/Courses/Saint_Mary's_College_Notre_Dame/MATH_345__-_Probability_(Kuter)/3%3A_Discrete_Random_Variables/3.4%3A_Hypergeometric_Geometric_and_Negative_Binomial_Distributions)
