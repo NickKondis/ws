@@ -1,0 +1,53 @@
+Traceback (most recent call last):
+  File "C:\Users\nickk\anaconda3\lib\site-packages\jupyter_cache\executors\utils.py", line 51, in single_nb_execution
+    executenb(
+  File "C:\Users\nickk\anaconda3\lib\site-packages\nbclient\client.py", line 1204, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "C:\Users\nickk\anaconda3\lib\site-packages\nbclient\util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "C:\Users\nickk\anaconda3\lib\site-packages\nbclient\util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+  File "C:\Users\nickk\anaconda3\lib\asyncio\base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "C:\Users\nickk\anaconda3\lib\site-packages\nbclient\client.py", line 663, in async_execute
+    await self.async_execute_cell(
+  File "C:\Users\nickk\anaconda3\lib\site-packages\nbclient\client.py", line 965, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\nickk\anaconda3\lib\site-packages\nbclient\client.py", line 862, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# X = Number of throws
+# P = Probability of getting 'heads'
+# r = number of necessary 'heads' to win the game
+X = np.arange(4, 30)
+r = 4
+p = 1/6
+
+# Negative Binomial distribution for python, scopy.stats
+
+nbinom_pd = nbinom.pmf(X, r, p)
+
+# Show plot of negative binomial distribution
+
+txt1="Fig 5"
+
+fig, nbd2 = plt.subplots(1, 1, figsize=(10, 8))
+nbd2.plot(X, nbinom_pd, 'bo', ms=8, label='nbinom pmf')
+plt.ylabel("Probability", fontsize="15")
+plt.xlabel("Number of Tosses", fontsize="15")
+plt.title("Negative Binomial Distribution - Flipping A Coin Game", fontsize="18")
+nbd2.vlines(X, 0, nbinom_pd, colors='g', lw=5, alpha=0.5)
+fig.text(.5, .05, txt, ha='center')
+------------------
+
+[1;31m--------------------------------------------------------------[0m
+[1;31mNameError[0m                    Traceback (most recent call last)
+Input [1;32mIn [3][0m, in [0;36m<cell line: 22>[1;34m()[0m
+[0;32m     20[0m plt[38;5;241m.[39mtitle([38;5;124m"[39m[38;5;124mNegative Binomial Distribution - Flipping A Coin Game[39m[38;5;124m"[39m, fontsize[38;5;241m=[39m[38;5;124m"[39m[38;5;124m18[39m[38;5;124m"[39m)
+[0;32m     21[0m nbd2[38;5;241m.[39mvlines(X, [38;5;241m0[39m, nbinom_pd, colors[38;5;241m=[39m[38;5;124m'[39m[38;5;124mg[39m[38;5;124m'[39m, lw[38;5;241m=[39m[38;5;241m5[39m, alpha[38;5;241m=[39m[38;5;241m0.5[39m)
+[1;32m---> 22[0m fig[38;5;241m.[39mtext([38;5;241m.5[39m, [38;5;241m.05[39m, [43mtxt[49m, ha[38;5;241m=[39m[38;5;124m'[39m[38;5;124mcenter[39m[38;5;124m'[39m)
+
+[1;31mNameError[0m: name 'txt' is not defined
+NameError: name 'txt' is not defined
+
