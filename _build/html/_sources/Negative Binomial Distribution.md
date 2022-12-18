@@ -2,7 +2,7 @@
 
 ## What is a Negative Binomial distribution?
 
-In a series of independent trials, where the probability of success is given by p, a Negative Binomial distribution describes the probability of success after X number of trials.  We can determine this probability by:
+In a series of independent trials, where the probability of success is given by p, a Negative Binomial distribution describes the probability of success after X number of trials.{cite}`stephanie_2021`  We can determine this probability by:
 
 
 
@@ -17,6 +17,7 @@ p(x) = P(X=x) &= P(r^{th}\ \text{success is on}\ x^{th}\ \text{trial}) \\
 \end{align*}
 
 $$
+
 
 Where *p* is the probability of success of each trial, *x* is the number of attempts, and *r* is the total number of successes necessary for overall success.
 
@@ -52,18 +53,20 @@ Let's look at a couple of examples examples...
 height: 200px
 name: cards1
 ---
+PLaying Card Game 1
 ```
 
                                                                      
->Choose a random card from a full deck of 52 cards, replacing a shuffling the card after each turn.  What is the probability that you will have chosen exactly three spades by the tenth draw?
+>Choose a random card from a full deck of 52 cards, replacing a shuffling the card after each turn.  What is the probability that you will have chosen exactly three hearts by the tenth draw?
 
 The probability *p* of each success is 0.25 (13/52), *x* is the number of terms (in this case ten), and *r* is the number of necessary individual successes (in this case 3).
 
 ```{figure} pngwing.com.png
 ---
 height: 200px
-name: cards1
+name: Dice Game 1
 ---
+Dice Game
 ```
 
 >Throw a fair sided die 5 times.  What is the probability that you will have thrown at least four even numbers by the fifth role?

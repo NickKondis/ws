@@ -155,7 +155,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Diff_NB_G.html">
-   5. Understanding the Differences
+   Examining The Differences
   </a>
  </li>
 </ul>
@@ -364,12 +364,24 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#let-s-take-a-deeper-dive-into-negative-binomial">
-   Let’s Take A Deeper Dive Into Negative Binomial
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   More On Negative Binomial
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#let-s-take-a-deeper-dive-into-negative-binomial">
+     Let’s Take A Deeper Dive Into Negative Binomial
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-the-negative-binomial-from-scipy-stats">
+   Using the Negative Binomial from scipy.stats
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#visualizing-the-negative-binomial-distribution">
      Visualizing the Negative Binomial Distribution
     </a>
@@ -395,12 +407,24 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#let-s-take-a-deeper-dive-into-negative-binomial">
-   Let’s Take A Deeper Dive Into Negative Binomial
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   More On Negative Binomial
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#let-s-take-a-deeper-dive-into-negative-binomial">
+     Let’s Take A Deeper Dive Into Negative Binomial
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-the-negative-binomial-from-scipy-stats">
+   Using the Negative Binomial from scipy.stats
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#visualizing-the-negative-binomial-distribution">
      Visualizing the Negative Binomial Distribution
     </a>
@@ -421,9 +445,14 @@ title="Print to PDF"
 <h1>More On Negative Binomial<a class="headerlink" href="#more-on-negative-binomial" title="Permalink to this headline">#</a></h1>
 <section id="let-s-take-a-deeper-dive-into-negative-binomial">
 <h2>Let’s Take A Deeper Dive Into Negative Binomial<a class="headerlink" href="#let-s-take-a-deeper-dive-into-negative-binomial" title="Permalink to this headline">#</a></h2>
-<p>To better understand what <a class="reference internal" href="Geometric%20Distribution.html#section-label"><span class="std std-ref">Geometric distribution</span></a> distribution looks like, let’s visualize what the distribution actually looks like:</p>
-<p>The <a class="reference internal" href="Geometric%20Distribution.html#section-label"><span class="std std-ref">Geometric distribution</span></a> formula can be found here.</p>
-<p>We are importing the necessary files below.</p>
+<p>To better understand what <a class="reference internal" href="Negative%20Binomial%20Distribution.html#section-label"><span class="std std-ref">Negative Binomial</span></a> distribution looks like, let’s visualize what the distribution actually looks like:</p>
+<p>The <a class="reference internal" href="Negative%20Binomial%20Distribution.html#section-label"><span class="std std-ref">Negative Binomial</span></a> formula can be found here.</p>
+<p>You need to import the appropriate libraries to run the code below.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">nbinom</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Importing the necessary libraries</span>
@@ -434,15 +463,21 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="using-the-negative-binomial-from-scipy-stats">
+<h1>Using the Negative Binomial from scipy.stats<a class="headerlink" href="#using-the-negative-binomial-from-scipy-stats" title="Permalink to this headline">#</a></h1>
+<p>The purpose of importing the scipy.stats library is to allow us to use the <a class="reference internal" href="Negative%20Binomial%20Distribution.html#section-label"><span class="std std-ref">Negative Binomial</span></a> function rather than calculating the value manually (as this is a long process).</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">nbinom</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>where X is the generated array of throw values (see above), r is the number of successful trials, and p is the relevant probability.</p>
 <section id="visualizing-the-negative-binomial-distribution">
-<h3>Visualizing the Negative Binomial Distribution<a class="headerlink" href="#visualizing-the-negative-binomial-distribution" title="Permalink to this headline">#</a></h3>
-<p>In a certain coin game, a fair coin is flipped so that there is a 50% chance of getting heads and a 50% chance of getting tails.  In order to win this game, you must get a total of three heads.  Let’s visualize what this probability distribution would be of winning this game for a given number of tosses.  The number of unsuccessful throws can be modeled using a <a class="reference internal" href="Geometric%20Distribution.html#section-label"><span class="std std-ref">Geometric distribution</span></a> distribution.</p>
+<h2>Visualizing the Negative Binomial Distribution<a class="headerlink" href="#visualizing-the-negative-binomial-distribution" title="Permalink to this headline">#</a></h2>
+<p>In a certain coin game, a fair coin is flipped so that there is a 50% chance of getting heads and a 50% chance of getting tails.  In order to win this game, you must get a total of three heads.  Let’s visualize what this probability distribution would be of winning this game for a given number of tosses.  The number of unsuccessful throws can be modeled using a <a class="reference internal" href="Negative%20Binomial%20Distribution.html#section-label"><span class="std std-ref">Negative Binomial</span></a> distribution.</p>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># X = Number of throws</span>
-<span class="c1"># P = Probability of getting &#39;heads&#39;</span>
-<span class="c1"># r = number of necessary &#39;heads&#39; to win the game</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
 <span class="n">r</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="n">p</span> <span class="o">=</span> <span class="mf">0.5</span>
 
@@ -462,16 +497,16 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.LineCollection at 0x1f6ff8c4c10&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.LineCollection at 0x1f979542c10&gt;
 </pre></div>
 </div>
-<img alt="_images/more_NB_7_1.png" src="_images/more_NB_7_1.png" />
+<img alt="_images/more_NB_8_1.png" src="_images/more_NB_8_1.png" />
 </div>
 </div>
-<p>From the graph above, we can see that the probability that a person wins the game on the eighth toss is  approximately 0.023 (from the chart of <a class="reference internal" href="Geometric%20Distribution.html#section-label"><span class="std std-ref">Geometric distribution</span></a> above).</p>
+<p>From the graph above, we can see that the probability that a person wins the game on the eighth toss is  approximately 0.023 (from the chart of <a class="reference internal" href="Negative%20Binomial%20Distribution.html#section-label"><span class="std std-ref">Negative Binomial</span></a> above).</p>
 <p>Here’s another one:</p>
 <p>Using a pair of dice, a person rolls both dice simultaneously.  Mismatched dice score a value of 0 while matched (paired) dice score a value of 2.  The object of the game is to achieve a score of 8.</p>
-<p>In this game, a win requires a score of 8 which equates to 4 pairs.  the probability of rolling a pair of matched dice is 1/6 (6/36).  This can be modeled with a <a class="reference internal" href="Geometric%20Distribution.html#section-label"><span class="std std-ref">Geometric distribution</span></a>.</p>
+<p>In this game, a win requires a score of 8 which equates to 4 pairs.  the probability of rolling a pair of matched dice is 1/6 (6/36).  This can be modeled with a <a class="reference internal" href="Negative%20Binomial%20Distribution.html#section-label"><span class="std std-ref">Negative Binomial</span></a>.</p>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># X = Number of throws</span>
@@ -497,13 +532,12 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.LineCollection at 0x1f680013f40&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.LineCollection at 0x1f9795e3ee0&gt;
 </pre></div>
 </div>
-<img alt="_images/more_NB_12_1.png" src="_images/more_NB_12_1.png" />
+<img alt="_images/more_NB_13_1.png" src="_images/more_NB_13_1.png" />
 </div>
 </div>
-</section>
 </section>
 </section>
 

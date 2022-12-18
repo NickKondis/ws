@@ -8,7 +8,12 @@
 
 # In a certain coin game, a fair coin is flipped so that there is a 50% chance of getting heads and a 50% chance of getting tails.  In order to win this game, you must get a 'heads'.  Let's visualize what this probability distribution would be of winning this game for a given number of tosses.  The number of unsuccessful throws can be modeled using a [](section-label2) distribution.
 
-# We are importing the necessary files below. 
+# You need to import the appropriate libraries to run the code below.
+# 
+# ```python
+# import numpy as np
+# import matplotlib.pyplot as plt
+# ```
 
 # In[1]:
 
@@ -19,6 +24,15 @@ import matplotlib.pyplot as plt
 
 
 # ### Visualizing the Geometric Distribution
+
+# We will begin by creating a randomized array to run the code below.  Yhis can be done by the following code:
+# 
+# ```python
+# sample = np.random.geometric(0.5, 1000)
+# bin = np.arange(0,20,1)
+# ```
+
+# 
 
 # In[2]:
 

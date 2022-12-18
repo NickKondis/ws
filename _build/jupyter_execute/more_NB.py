@@ -8,7 +8,13 @@
 
 # The [](section-label) formula can be found here.
 
-# We are importing the necessary files below. 
+# You need to import the appropriate libraries to run the code below.
+# 
+# ```python
+# import numpy as np
+# from scipy.stats import nbinom
+# import matplotlib.pyplot as plt
+# ```
 
 # In[1]:
 
@@ -19,6 +25,16 @@ from scipy.stats import nbinom
 import matplotlib.pyplot as plt
 
 
+# # Using the Negative Binomial from scipy.stats
+# 
+# The purpose of importing the scipy.stats library is to allow us to use the [](section-label) function rather than calculating the value manually (as this is a long process).
+# 
+# ```python
+# nbinom.pmf(X, r, p)
+# ```
+# 
+# where X is the generated array of throw values (see above), r is the number of successful trials, and p is the relevant probability.
+
 # ### Visualizing the Negative Binomial Distribution
 
 # In a certain coin game, a fair coin is flipped so that there is a 50% chance of getting heads and a 50% chance of getting tails.  In order to win this game, you must get a total of three heads.  Let's visualize what this probability distribution would be of winning this game for a given number of tosses.  The number of unsuccessful throws can be modeled using a [](section-label) distribution.
@@ -27,9 +43,6 @@ import matplotlib.pyplot as plt
 # In[2]:
 
 
-# X = Number of throws
-# P = Probability of getting 'heads'
-# r = number of necessary 'heads' to win the game
 X = np.arange(3, 20)
 r = 3
 p = 0.5

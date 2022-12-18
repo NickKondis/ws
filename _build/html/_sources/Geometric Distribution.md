@@ -2,7 +2,7 @@
 
 ## What is a Geometric distribution?
 
-Geometric distribution is the probability of your first success after X number of trials.  For instance, the probability of getting the first 'heads' after a given number of coin flips.
+Geometric distribution is the probability of your first success after X number of trials {cite}'cuemath'.  For instance, the probability of getting the first 'heads' after a given number of coin flips.
 
 ## Properties of Geometric Distributions
 
@@ -56,17 +56,19 @@ Let's look at a couple of examples examples...
 height: 200px
 name: cards1
 ---
+Card Game 2
 ```
 
->Choose a random card from a full deck of 52 cards, replacing a shuffling the card after each turn.  What is the probability that you will draw a "clubs" after 7 trials?
+>Choose a random card from a full deck of 52 cards, replacing a shuffling the card after each turn.  What is the probability that you will draw a "hearts" after 7 trials?
 
 The probability *p* of each success is 0.25 (13/52) and *x* is the number of terms (in this case seven).
 
 ```{figure} dice_PNG3.png
 ---
 height: 200px
-name: cards1
+name: dice
 ---
+Dice Game 2
 ```
 
 >Throw a fair sided die 8 times.  What is the probability that you will have thrown one even value (on the die)?
