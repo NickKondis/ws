@@ -19,6 +19,7 @@ p(x) = P(X=x) &= P(r^{th}\ \text{success is on}\ x^{th}\ \text{trial}) \\
 $$
 
 
+
 Where *p* is the probability of success of each trial, *x* is the number of attempts, and *r* is the total number of successes necessary for overall success.
 
 ```{warning}
@@ -46,8 +47,8 @@ This rule means that the the sum of the probability of a binary event occurring 
 
 Let's look at a couple of examples examples...
 
-
-
+(section-label3)=
+### Example 1
 ```{figure} Fanned-Playing-Card-Transparent.png
 ---
 height: 200px
@@ -60,6 +61,9 @@ PLaying Card Game 1
 >Choose a random card from a full deck of 52 cards, replacing a shuffling the card after each turn.  What is the probability that you will have chosen exactly three hearts by the tenth draw?
 
 The probability *p* of each success is 0.25 (13/52), *x* is the number of terms (in this case ten), and *r* is the number of necessary individual successes (in this case 3).
+
+(section-label4)=
+### Example 2
 
 ```{figure} pngwing.com.png
 ---
@@ -75,7 +79,7 @@ The probability *p* of each success is 0.5, *x* is the total number of throws (5
 
 
 
-Note, the mathematics of solving the probabilities is beyond the scope of this page.  It is assumed that you will solve the math using technology (symbolab, R, statistics calculator, etc) to find the [](section-label).
+Note, the mathematics of solving the probabilities is beyond the scope of this page.  It is assumed that you will solve the math using technology (python, symbolab, R, statistics calculator, etc) to find the [](section-label).
 
 
 

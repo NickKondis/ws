@@ -368,6 +368,16 @@ title="Print to PDF"
    Let’s Have A Look
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#characteristics-of-negative-binomial-probability">
+   Characteristics of Negative Binomial Probability
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#characteristics-of-geometric-probability">
+   Characteristics of Geometric Probability
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -392,6 +402,16 @@ title="Print to PDF"
    Let’s Have A Look
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#characteristics-of-negative-binomial-probability">
+   Characteristics of Negative Binomial Probability
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#characteristics-of-geometric-probability">
+   Characteristics of Geometric Probability
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -406,18 +426,26 @@ title="Print to PDF"
 <h1>Examining The Differences<a class="headerlink" href="#examining-the-differences" title="Permalink to this headline">#</a></h1>
 <section id="let-s-have-a-look">
 <h2>Let’s Have A Look<a class="headerlink" href="#let-s-have-a-look" title="Permalink to this headline">#</a></h2>
-<p>As we have seen, a <a class="reference internal" href="Negative%20Binomial%20Distribution.html#section-label"><span class="std std-ref">Negative Binomial</span></a> is used to determine the probability of a defined number of successes in repeated trials.  Examples of this were shown in PROBLEM1 and PROBLEM2 in the in depth analysis of <a class="reference internal" href="Negative%20Binomial%20Distribution.html#section-label"><span class="std std-ref">Negative Binomial</span></a>. The characteristic features of this were both repeated trials and defined number of successes.</p>
-<p>Characteristics
-defined, independent probability
-binary values
-repeated trials
-defined number of necessary successes</p>
+<p>As we have seen, a <a class="reference internal" href="Negative%20Binomial%20Distribution.html#section-label"><span class="std std-ref">Negative Binomial</span></a> is used to determine the probability of a defined number of successes in repeated trials.  Examples of this were shown in (section-label3) and (section-label4) in the in depth analysis of <a class="reference internal" href="Negative%20Binomial%20Distribution.html#section-label"><span class="std std-ref">Negative Binomial</span></a>. The characteristic features of this were both repeated trials and defined number of successes.</p>
+</section>
+<section id="characteristics-of-negative-binomial-probability">
+<h2>Characteristics of Negative Binomial Probability<a class="headerlink" href="#characteristics-of-negative-binomial-probability" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>defined, independent probability</p></li>
+<li><p>binary values</p></li>
+<li><p>repeated trials</p></li>
+<li><p>defined number of necessary successes</p></li>
+</ul>
 <p>In <a class="reference internal" href="Geometric%20Distribution.html#section-label2"><span class="std std-ref">Geometric Distribution</span></a>, there are also repeated trials.  However, <a class="reference internal" href="Geometric%20Distribution.html#section-label2"><span class="std std-ref">Geometric Distribution</span></a> is deifined as needing only a single success.</p>
-<p>Characteristics
-defined, independent probability
-binary values
-repeated trials
-single necessary success</p>
+</section>
+<section id="characteristics-of-geometric-probability">
+<h2>Characteristics of Geometric Probability<a class="headerlink" href="#characteristics-of-geometric-probability" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>defined, independent probability</p></li>
+<li><p>binary values</p></li>
+<li><p>repeated trials</p></li>
+<li><p>single necessary success</p></li>
+</ul>
 <p>Even though,<a class="reference internal" href="Negative%20Binomial%20Distribution.html#section-label"><span class="std std-ref">Negative Binomial</span></a> and <a class="reference internal" href="Geometric%20Distribution.html#section-label2"><span class="std std-ref">Geometric Distribution</span></a> are distinct probabilities, <a class="reference internal" href="Geometric%20Distribution.html#section-label2"><span class="std std-ref">Geometric Distribution</span></a> can be considered a subset of <a class="reference internal" href="Negative%20Binomial%20Distribution.html#section-label"><span class="std std-ref">Negative Binomial</span></a> where the defined number of successes is exactly one.</p>
 <p>Let’s take a look at some examples….</p>
 <div class="cell docutils container">
@@ -431,7 +459,7 @@ single necessary success</p>
 </div>
 </div>
 <p>What is the probability of getting 4 heads by flipping a coin 5 times?</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input tag_hide-output docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Because this requires multiple successes, it is a Negative Binomial.&quot;</span><span class="p">)</span>
 </pre></div>
@@ -443,7 +471,8 @@ single necessary success</p>
 </div>
 </div>
 </div>
-<div class="cell docutils container">
+<p>The answer is below.</p>
+<div class="cell tag_hide-input tag_hide-output docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nbinom</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
 </pre></div>
@@ -456,7 +485,8 @@ single necessary success</p>
 </div>
 </div>
 <p>What is the likelihood of dealt 4 clubs in a 5 card poker hand?</p>
-<div class="cell docutils container">
+<p>The code is below.</p>
+<div class="cell tag_hide-input tag_hide-output docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Because the probability of getting a club is effected by each removed card, this is neither Negative Binomial or Geometric.&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Code is not applicable&quot;</span><span class="p">)</span>
@@ -471,7 +501,7 @@ Code is not applicable
 </div>
 </div>
 <p>What is the probability of getting a 6 by rolling 3 dice simultaneously?</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input tag_hide-output docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a Geometric probability&quot;</span><span class="p">)</span>
 <span class="n">answer</span> <span class="o">=</span> <span class="mi">1</span><span class="o">-</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span><span class="o">**</span><span class="mi">6</span>
@@ -486,7 +516,7 @@ The answer is 0.984375
 </div>
 </div>
 </div>
-<p>Great job, that’s the end of the lesson.</p>
+<p>##Great job, that’s the end of the lesson.</p>
 </section>
 </section>
 

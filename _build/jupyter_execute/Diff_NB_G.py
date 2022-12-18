@@ -4,21 +4,21 @@
 # # Examining The Differences
 # ## Let's Have A Look
 
-# As we have seen, a [](section-label) is used to determine the probability of a defined number of successes in repeated trials.  Examples of this were shown in PROBLEM1 and PROBLEM2 in the in depth analysis of [](section-label). The characteristic features of this were both repeated trials and defined number of successes.
+# As we have seen, a [](section-label) is used to determine the probability of a defined number of successes in repeated trials.  Examples of this were shown in (section-label3) and (section-label4) in the in depth analysis of [](section-label). The characteristic features of this were both repeated trials and defined number of successes.
 # 
-# Characteristics
-# defined, independent probability
-# binary values
-# repeated trials
-# defined number of necessary successes
+# ## Characteristics of Negative Binomial Probability
+# - defined, independent probability
+# - binary values
+# - repeated trials
+# - defined number of necessary successes
 # 
 # In [](section-label2), there are also repeated trials.  However, [](section-label2) is deifined as needing only a single success.
 # 
-# Characteristics
-# defined, independent probability
-# binary values
-# repeated trials
-# single necessary success
+# ## Characteristics of Geometric Probability
+# - defined, independent probability
+# - binary values
+# - repeated trials
+# - single necessary success
 # 
 # 
 # 
@@ -48,6 +48,8 @@ import numpy as np
 print("Because this requires multiple successes, it is a Negative Binomial.")
 
 
+# The answer is below.
+
 # In[3]:
 
 
@@ -56,6 +58,8 @@ nbinom.pmf(5, 4, 0.5)
 
 # What is the likelihood of dealt 4 clubs in a 5 card poker hand?
 # 
+
+# The code is below.
 
 # In[4]:
 
@@ -75,4 +79,4 @@ answer = 1-(1-0.5)**6
 print("The answer is " + str(answer))
 
 
-# Great job, that's the end of the lesson.
+# ##Great job, that's the end of the lesson.

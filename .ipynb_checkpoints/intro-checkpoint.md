@@ -10,7 +10,7 @@ Mastery Of The World!
 # Negative Binomial Distribution versus Geometric Distribution
 ## How Are The Similar
 
-[](section-label) distributions and Geometric distributions are similar in structure: each describe a series of independent trials with exactly two possible outcomes.  These outcomes are typically described in terms of success/failure.  For example, geneticist often describe simple heredity (binary) as a phenotype that either is expressed or not expressed.  Other examples include models describing pass or fail (as in I'm either going to pass my Tools of the Data Scientist course or fail..haha.)
+**Negative Binomial Distribution** distributions and **Geometric distribution** are similar in structure: each describe a series of independent trials with exactly two possible outcomes.  These outcomes are typically described in terms of success/failure.  For example, geneticist often describe simple heredity (binary) as a phenotype that either is expressed or not expressed.  Other examples include models describing pass or fail (as in I'm either going to pass my Tools of the Data Scientist course or fail..haha.)
 
 Try this for yourself...
 
@@ -45,7 +45,7 @@ Now that we understand the binary nature, we can examine how these are used in [
 
 
 
-Check out the content pages bundled with this sample book to see more.
+Check out the content pages to continue.
 
 ```{tableofcontents}
 ```
