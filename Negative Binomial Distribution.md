@@ -2,7 +2,7 @@
 
 ## What is a Negative Binomial distribution?
 
-In a series of independent trials, where the probability of success is given by p, a Negative Binomial distribution describes the probability of success after X number of trials.{cite}`stephanie_2021`  We can determine this probability by:
+In a series of independent trials, where the probability of success is given by p, a Negative Binomial distribution describes the probability of success after X number of trials.  We can determine this probability by:
 
 
 

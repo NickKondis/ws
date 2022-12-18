@@ -25,7 +25,7 @@ import matplotlib.pyplot as plt
 
 # ### Visualizing the Geometric Distribution
 
-# We will begin by creating a randomized array to run the code below.  Yhis can be done by the following code:
+# We will begin by creating a randomized array to run the code below.  This can be done by the following code:
 # 
 # ```python
 # sample = np.random.geometric(0.5, 1000)
